@@ -1,7 +1,7 @@
 - name: first play book
   hosts: web
   vars:
-    COURSE: Devops
+    COURSE: "Devops"
   tasks
   - name: print information
     ansible.builtin.debug:
