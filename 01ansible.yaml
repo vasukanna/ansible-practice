@@ -1,9 +1,10 @@
-- name: first play book
+- name: variables to print
   hosts: web
-  tasks
-  - name: print information
-    vars:
-    COURSE: Devops
+  vars:
+    COURSE: "DevOps with AWS"
+    DURATION: "120HRS"
+  tasks:
+  - name: print the information
     ansible.builtin.debug:
-    msg: System {{ COURSE }}
+      msg: "Hi, I am learning {{COURSE}}, Duration is: {{DURATION}}"
     
