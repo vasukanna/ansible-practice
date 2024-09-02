@@ -9,6 +9,6 @@
 
   - name: run nginx
     ansible.builtin.package:
-      name: started
+      name: nginx
       state: started
-      enabled: yes
+      enabled: false
