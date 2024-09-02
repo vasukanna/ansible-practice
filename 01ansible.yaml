@@ -1,0 +1,9 @@
+- name: first play book
+  hosts: web
+  tasks
+  - name: print information
+    vars:
+    COURSE: Devops
+    ansible.builtin.debug:
+    msg: System {{ COURSE }}
+    
