@@ -1,4 +1,4 @@
-- name: first play book
+- name: print variables
   hosts: web
     vars:
       COURSE: Devops
