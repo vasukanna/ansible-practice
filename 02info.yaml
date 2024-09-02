@@ -2,7 +2,7 @@
   hosts: web
   vars:
     COURSE: "Devops"
-  tasks
+  tasks:
   - name: print information
     ansible.builtin.debug:
       msg: "Hi, i am learning {{ COURSE }}"
